@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Therapy Buddy</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Therapy Buddy</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to Therapy Buddy</h1>
-    <script src="script.js"></script>
+  <div class="container">
+    <div class="therapy-tabs">
+      <ul>
+        <li>
+          <a href="#" data-topic="Anxiety & Stress">
+            <i class="fas fa-sun"></i> Anxiety & Stress
+          </a>
+        </li>
+        <li>
+          <a href="#" data-topic="Depression & Mood">
+            <i class="fas fa-cloud-rain"></i> Depression & Mood
+          </a>
+        </li>
+        <li>
+          <a href="#" data-topic="Relationships">
+            <i class="fas fa-users"></i> Relationships
+          </a>
+        </li>
+        <li>
+          <a href="#" data-topic="Self-Esteem & Confidence">
+            <i class="fas fa-heart"></i> Self-Esteem & Confidence
+          </a>
+        </li>
+        <li>
+          <a href="#" data-topic="Trauma & Grief">
+            <i class="fas fa-band-aid"></i> Trauma & Grief
+          </a>
+        </li>
+        <li>
+          <a href="#" data-topic="Life Transitions">
+            <i class="fas fa-sync-alt"></i> Life Transitions
+          </a>
+        </li>
+      </ul>
+      <button id="newChatButton">New Chat</button>
+    </div>
+    <div class="chat-container">
+      <h1>Therapy Buddy</h1>
+      <div class="chat-messages" aria-live="polite">
+        <div class="starter-message">
+          <p>Hi there! I'm your Therapy Buddy. Feel free to chat with me about anything that's on your mind. I'm here to listen and support you!</p>
+        </div>
+      </div>
+      <div class="input-area">
+        <input type="text" id="messageInput" placeholder="Type your message..." aria-label="Type your message">
+        <button id="sendButton">Send</button>
+      </div>
+      <div class="typing-indicator" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="theme-toggle">
+      <input type="checkbox" id="theme-switch">
+      <label for="theme-switch">Toggle Dark Mode</label>
+    </div>
+    <p>Please note that Therapy Buddy is not a substitute for professional medical advice. If you are in need of immediate assistance, please contact a qualified mental health professional.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/433b9d3583.js" crossorigin="anonymous"></script>
 </body>
 </html>
